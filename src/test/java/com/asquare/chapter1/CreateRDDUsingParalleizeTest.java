@@ -2,6 +2,7 @@ package com.asquare.chapter1;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +14,10 @@ public class CreateRDDUsingParalleizeTest {
 
     private final SparkConf sc = new SparkConf().setAppName("CreateRDDUsingParalleizeTest")
                                     .setMaster("local[*]");
+    @BeforeEach
+    public void setUp(){
+
+    }
 
     @Test
     @DisplayName("Create Empty RDD with no partition ")
