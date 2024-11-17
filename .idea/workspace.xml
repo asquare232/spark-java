@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ff0de1c-bd0f-4d9d-8df2-e3e0f19ebf6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/asquare/chapter1/CreateRDDUsingParalleizeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/asquare/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asquare/chapter1/SparkFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/asquare/chapter1/SparkFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asquare/chapter1/SparkFirst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,7 +52,7 @@
       <recent name="E:\project\JavaApacheSpark\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CreateRDDUsingParalleizeTest.testWithDefaultPartition">
     <configuration name="SparkFirst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.asquare.chapter1.SparkFirst" />
       <module name="spark-java" />
@@ -67,8 +66,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateRDDUsingParalleizeTest.testWithDefaultPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.asquare.chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.asquare.chapter1" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.chapter1.CreateRDDUsingParalleizeTest" />
+      <option name="METHOD_NAME" value="testWithDefaultPartition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateRDDUsingParalleizeTest.testWithNoPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.asquare.chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.asquare.chapter1" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.chapter1.CreateRDDUsingParalleizeTest" />
+      <option name="METHOD_NAME" value="testWithNoPartition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateRDDUsingParalleizeTest.testWithDefaultPartition" />
+        <item itemvalue="JUnit.CreateRDDUsingParalleizeTest.testWithNoPartition" />
         <item itemvalue="Application.SparkFirst" />
       </list>
     </recent_temporary>
