@@ -1,4 +1,4 @@
-package com.asquare.chapter1;
+package com.asquare.example;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -10,14 +10,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class CreateRDDUsingParalleizeTest {
+public class CreateRDDUsingParallalizeTest {
 
     private final SparkConf sc = new SparkConf().setAppName("CreateRDDUsingParalleizeTest")
                                     .setMaster("local[*]");
-    @BeforeEach
-    public void setUp(){
-
-    }
 
     @Test
     @DisplayName("Create Empty RDD with no partition ")
