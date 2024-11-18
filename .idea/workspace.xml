@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ff0de1c-bd0f-4d9d-8df2-e3e0f19ebf6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/asquare/chapter1/CreateRDDUsingParalleizeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/CreateRDDExternalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/1000words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/dma.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wordslist.txt.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/asquare/chapter1/SparkFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asquare/chapter1/SparkFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/asquare/chapter1/SparkFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asquare/example/SparkFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/asquare/chapter1/CreateRDDUsingParalleizeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/CreateRDDUsingParallalizeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,47 +55,82 @@
       <recent name="E:\project\JavaApacheSpark\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateRDDUsingParalleizeTest.testWithDefaultPartition">
-    <configuration name="SparkFirst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.asquare.chapter1.SparkFirst" />
+  <component name="RunManager" selected="JUnit.CreateRDDExternalTest.testLoadingCSVFileIntoSparkRDD">
+    <configuration name="CreateRDDExternalTest.testFileintoSParkRDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spark-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.asquare.chapter1.*" />
+          <option name="PATTERN" value="com.asquare.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateRDDUsingParalleizeTest.testWithDefaultPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spark-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.asquare.chapter1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.asquare.chapter1" />
-      <option name="MAIN_CLASS_NAME" value="com.asquare.chapter1.CreateRDDUsingParalleizeTest" />
-      <option name="METHOD_NAME" value="testWithDefaultPartition" />
+      <option name="PACKAGE_NAME" value="com.asquare.example" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
+      <option name="METHOD_NAME" value="testFileintoSParkRDD(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateRDDUsingParalleizeTest.testWithNoPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateRDDExternalTest.testFileintoSParkRDDFromMethodSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spark-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.asquare.chapter1.*" />
+          <option name="PATTERN" value="com.asquare.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.asquare.chapter1" />
-      <option name="MAIN_CLASS_NAME" value="com.asquare.chapter1.CreateRDDUsingParalleizeTest" />
-      <option name="METHOD_NAME" value="testWithNoPartition" />
+      <option name="PACKAGE_NAME" value="com.asquare.example" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
+      <option name="METHOD_NAME" value="testFileintoSParkRDDFromMethodSource(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateRDDExternalTest.testLoadingCSVFileIntoSparkRDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.asquare.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.asquare.example" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
+      <option name="METHOD_NAME" value="testLoadingCSVFileIntoSparkRDD" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateRDDExternalTest.testWholeDirectoryIntoSparkRDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.asquare.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.asquare.example" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
+      <option name="METHOD_NAME" value="testWholeDirectoryIntoSparkRDD" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateRDDExternalTest.testWholeDirectoryintoSparkRDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.asquare.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.asquare.example" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
+      <option name="METHOD_NAME" value="testWholeDirectoryintoSparkRDD" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,9 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateRDDUsingParalleizeTest.testWithDefaultPartition" />
-        <item itemvalue="JUnit.CreateRDDUsingParalleizeTest.testWithNoPartition" />
-        <item itemvalue="Application.SparkFirst" />
+        <item itemvalue="JUnit.CreateRDDExternalTest.testLoadingCSVFileIntoSparkRDD" />
+        <item itemvalue="JUnit.CreateRDDExternalTest.testWholeDirectoryIntoSparkRDD" />
+        <item itemvalue="JUnit.CreateRDDExternalTest.testWholeDirectoryintoSparkRDD" />
+        <item itemvalue="JUnit.CreateRDDExternalTest.testFileintoSParkRDDFromMethodSource" />
+        <item itemvalue="JUnit.CreateRDDExternalTest.testFileintoSParkRDD" />
       </list>
     </recent_temporary>
   </component>
