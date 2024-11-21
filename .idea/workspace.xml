@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ff0de1c-bd0f-4d9d-8df2-e3e0f19ebf6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/CreateRDDExternalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/1000words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/dma.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/wordslist.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/datasets/DatasetReduceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/rdd/reduce/RDDReduceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/asquare/chapter1/SparkFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asquare/example/SparkFirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/asquare/chapter1/CreateRDDUsingParalleizeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/CreateRDDUsingParallalizeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/asquare/example/SparkFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asquare/example/rdd/SparkFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/asquare/example/CreateRDDExternalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/rdd/CreateRDDExternalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/asquare/example/CreateRDDUsingParallalizeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/asquare/example/rdd/CreateRDDUsingParallalizeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,40 +53,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\project\JavaApacheSpark\src\test\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.asquare.example.datasets" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateRDDExternalTest.testLoadingCSVFileIntoSparkRDD">
-    <configuration name="CreateRDDExternalTest.testFileintoSParkRDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spark-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.asquare.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.asquare.example" />
-      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
-      <option name="METHOD_NAME" value="testFileintoSParkRDD(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateRDDExternalTest.testFileintoSParkRDDFromMethodSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spark-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.asquare.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.asquare.example" />
-      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
-      <option name="METHOD_NAME" value="testFileintoSParkRDDFromMethodSource(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RDDReduceTest.testSparkReduceMethod (1)">
     <configuration name="CreateRDDExternalTest.testLoadingCSVFileIntoSparkRDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spark-java" />
       <extension name="coverage">
@@ -120,17 +90,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateRDDExternalTest.testWholeDirectoryintoSparkRDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatasetReduceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spark-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.asquare.example.*" />
+          <option name="PATTERN" value="com.asquare.example.datasets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.asquare.example" />
-      <option name="MAIN_CLASS_NAME" value="com.asquare.example.CreateRDDExternalTest" />
-      <option name="METHOD_NAME" value="testWholeDirectoryintoSparkRDD" />
+      <option name="PACKAGE_NAME" value="com.asquare.example.datasets" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.datasets.DatasetReduceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RDDReduceTest.testSparkReduceMethod (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.asquare.example.rdd.reduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.asquare.example.rdd.reduce" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.rdd.reduce.RDDReduceTest" />
+      <option name="METHOD_NAME" value="testSparkReduceMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RDDReduceTest.testSparkReduceMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.asquare.example.reduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.asquare.example.reduce" />
+      <option name="MAIN_CLASS_NAME" value="com.asquare.example.reduce.RDDReduceTest" />
+      <option name="METHOD_NAME" value="testSparkReduceMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RDDReduceTest.testSparkReduceMethod (1)" />
+        <item itemvalue="JUnit.RDDReduceTest.testSparkReduceMethod" />
+        <item itemvalue="JUnit.DatasetReduceTest" />
         <item itemvalue="JUnit.CreateRDDExternalTest.testLoadingCSVFileIntoSparkRDD" />
         <item itemvalue="JUnit.CreateRDDExternalTest.testWholeDirectoryIntoSparkRDD" />
-        <item itemvalue="JUnit.CreateRDDExternalTest.testWholeDirectoryintoSparkRDD" />
-        <item itemvalue="JUnit.CreateRDDExternalTest.testFileintoSParkRDDFromMethodSource" />
-        <item itemvalue="JUnit.CreateRDDExternalTest.testFileintoSParkRDD" />
       </list>
     </recent_temporary>
   </component>
@@ -156,5 +157,16 @@
       <updated>1731696639314</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/asquare/example/datasets/DatasetReduceTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
