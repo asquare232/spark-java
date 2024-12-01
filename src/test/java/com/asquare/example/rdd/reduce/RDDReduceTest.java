@@ -11,8 +11,6 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.IntStream;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RDDReduceTest {
@@ -46,6 +44,50 @@ public class RDDReduceTest {
           System.out.printf("[Spark RDD Reduce: %d ms%n%n", timeElapsed);
 
       }
+    }
+
+
+    @Test
+    @DisplayName("Test fold() method in Spark RDD")
+    void testSparkFoldMethod(){
+        try(final var sparkContext = new JavaSparkContext(sc)){
+            final var myRdd = sparkContext.parallelize(data, 14);
+            final Instant start= Instant.now();
+
+            for(int i =0; i < 10 ; i ++){
+                final var sum = myRdd.fold(0D,Double::sum);
+                System.out.println("[SPark RDD fold] SUM :" + sum);
+            }
+            final long timeElapsed = (Duration.between(start, Instant.now()).toMillis())/ 10;
+            System.out.printf("[Spark RDD fold: %d ms%n%n", timeElapsed);
+
+        }
+    }
+
+
+    /**
+     * For each of the partition , it will do sum
+     * then will do the sum again to find the final sum
+     */
+    @Test
+    @DisplayName("Test aggregate() method in Spark RDD")
+    void testSparkAggregateMethod(){
+        try(final var sparkContext = new JavaSparkContext(sc)){
+            final var myRdd = sparkContext.parallelize(data, 14);
+            final Instant start= Instant.now();
+
+            for(int i =0; i < 10 ; i ++){
+                final var sum = myRdd.aggregate(0D,Double::sum, Double::sum);
+                final var max = myRdd.aggregate(0D,Double::sum, Double::max);
+                final var min = myRdd.aggregate(0D,Double::sum, Double::min);
+                System.out.println("[SPark RDD Aggregate] SUM :" + sum);
+                System.out.println("[SPark RDD Aggregate] MAX for each partition :" + max);
+                System.out.println("[SPark RDD Aggregate] MIN for all partition:" + min);
+            }
+            final long timeElapsed = (Duration.between(start, Instant.now()).toMillis())/ 10;
+            System.out.printf("[Spark RDD Aggregate]: %d ms%n%n", timeElapsed);
+
+        }
     }
 
 }
